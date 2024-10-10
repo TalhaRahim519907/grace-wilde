@@ -86,7 +86,7 @@
                     <a class="nav-link px-3 py-2" href="">Contact Us</a></li></ul>
                 <div class="py-2" style="width: 170px;">
                     <form class="d-flex">
-                        <input class=" nav-input me-2 bg-transparent border-0" style="outline: none;" type="search" placeholder="Enter Name Here" aria-label="Search">                
+                        <input class="form-control nav-input me-2 bg-transparent border-0" style="outline: none;" type="search" placeholder="Enter Name Here" aria-label="Search">                
                       </form>
                 </div>
                 <div class="py-2" style="padding-right: 1rem;">
@@ -113,7 +113,7 @@
                     </div>
                 </div>
                 <div class="page-nav d-flex mt-4 align-items-center justify-content-between">
-                    <a href="#" id="newer-posts" class="left wow fadeInLeft" data-wow-duration="2.5s"><i class="fa-solid fa-chevron-left"></i> Newer Posts</a>
+                    <a href="#" id="newer-posts" class="left wow fadeInLeft" data-wow-duration="2.5s"><i class="fa-solid fa-chevron-left"></i> Older Posts</a>
                     <div class="digit d-flex align-items-center">
                         <a href="#0" class="active">1</a>
                         <a href="#0">2</a>
@@ -124,7 +124,7 @@
                         <a href="#0">...</a>
                         <a href="#0">10</a>
                     </div>
-                    <a href="#" id="older-posts" class="right wow fadeInRight" data-wow-duration="2.5s">Older Posts <i class="fa-solid fa-chevron-right"></i></a>
+                    <a href="#" id="older-posts" class="right wow fadeInRight" data-wow-duration="2.5s">Newer Posts <i class="fa-solid fa-chevron-right"></i></a>
                 </div>
             </div>
         </div>
@@ -306,7 +306,7 @@ function displayBlogs(page = 1, blogsPerPage = 6) {
     const blogHTML = `
       <div class="col-lg-4">
         <div class="item bor mb-4 wow fadeInLeft" data-wow-duration="3s">
-          <a href="blog-single-1.html" class="w-img d-block">
+          <a href="" class="w-img d-block">
             <img src="${blog.image}" alt="image">
           </a>
           <div class="content text-center p-4">
