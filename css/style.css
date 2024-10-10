@@ -2,6 +2,7 @@
   height: 100px;
   width: 120px;
 }
+
 .navbar-brand {
   height: 60px;
 }
@@ -75,3 +76,52 @@
   color: white;
   padding: 1.15rem 0.15rem;
 }
+
+/* Base styles for nav-link */
+.nav-link {
+  position: relative; /* Ensure the pseudo-element is positioned relative to the nav link */
+  color: #ffffff; /* White text */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Bolder underline with space */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 5px; /* Adjust this value to control the space above the underline */
+  height: 2px; /* Thickness of the underline */
+  background-color: #ffffff; /* Color of the underline */
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: scaleX(0); /* Initial state: no underline */
+  transform-origin: left; /* Start the underline from the left */
+}
+
+/* On hover: show the underline */
+.nav-link:hover::after {
+  opacity: 1;
+  transform: scaleX(1); /* Animate the underline from left to right */
+}
+
+/* Active item: permanent underline */
+.nav-link.active::after {
+  opacity: 1;
+  transform: scaleX(1); /* Ensure the underline is always visible */
+}
+
+/* Optional: active item color change for better distinction */
+.nav-link.active {
+  color: #f8fafc; /* Lighten the active link's text color (optional) */
+}
+
+/* .item {
+  border: 1px solid #ddd;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+.w-img img {
+  width: 100%;
+  height: auto;
+} */

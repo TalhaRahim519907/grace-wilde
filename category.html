@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="NextGenerationDev" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <title>Grace Wilde</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/style-2.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- menu area start here -->
+    <header id="navbar" class="menu sub-bg">
+    <!-- inner-banner area start here -->
+    <div class="inner-banner" style="background-color: #475569;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="/index.html">
+                    <img id="navbar-logo" class="navbar_logo" src="assets/images/logo.svg" alt=""/>
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link px-3 py-2" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-3 py-2 active" href="/category.html">Articles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-3 py-2" href="">Build Game</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-3 py-2" href="">Game</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-3 py-2" href="">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-3 py-2" href="">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-3 py-2" href="">Contact Us</a></li></ul>
+                <div class="py-2" style="width: 170px;">
+                    <form class="d-flex">
+                        <input class=" nav-input me-2 bg-transparent border-0" style="outline: none;" type="search" placeholder="Enter Name Here" aria-label="Search">                
+                      </form>
+                </div>
+                <div class="py-2" style="padding-right: 1rem;">
+                    <img src="./assets/images/free-user-icon-3296-thumb.png" alt="" height="45px">
+                </div>
+                <div class=" py-2 px-1">
+                    <button class="nav-logout-btn text-white rounded-5" type="">logout</button>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </div>
+    <!-- inner-banner area end here -->
+
+    <!-- page details area start here -->
+    <section class="page-details section-padding py-5 my-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog left-area mb-4 mb-lg-0">
+                        <div class="row" id="blog-container">
+                            <!-- Blog items will be injected here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="page-nav d-flex mt-4 align-items-center justify-content-between">
+                    <a href="#" id="newer-posts" class="left wow fadeInLeft" data-wow-duration="2.5s"><i class="fa-solid fa-chevron-left"></i> Newer Posts</a>
+                    <div class="digit d-flex align-items-center">
+                        <a href="#0" class="active">1</a>
+                        <a href="#0">2</a>
+                        <a href="#0">3</a>
+                        <a href="#0">4</a>
+                        <a href="#0">5</a>
+                        <a href="#0">6</a>
+                        <a href="#0">...</a>
+                        <a href="#0">10</a>
+                    </div>
+                    <a href="#" id="older-posts" class="right wow fadeInRight" data-wow-duration="2.5s">Older Posts <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- page details area end here -->
+
+    <!-- footer area start here -->
+    <section class="footer-blog" style="background-color: #475569;">
+        <footer class="container-fluid">
+            <div class="row">
+              <!-- Left side columns -->
+              <div class="mt-3 footer-col-1 col-md-3 col-sm-6">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img id="navbar-logo" class="navbar_logo" src="assets/images/logo.svg" alt=""/>
+                  </a>
+                <ul class="list-unstyled ">
+                  <li><a href="#">Article</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="/blog.html">Blog</a></li>
+                </ul>
+              </div>
+              <div class="mt-3 footer-col-3 col-md-3 col-sm-6">
+                <h3 class="text-white">Company</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+                  <li><a href="#">Terms & Services</a></li>
+                </ul>
+              </div>  
+              <div class="mt-3 col-md-1 col-sm-6">
+              </div>  
+              <div class="mt-3 col-md-2 col-sm-6">
+              </div>  
+              <!-- Right side column -->
+              <div class="mt-3 col-md-2 col-sm-12">
+                <h5 class="text-white">Download the App:</h5>
+                <ul class="list-unstyled">
+                    <div class="d-flex flex-column my-4">
+                        <div class="store-btn">
+                            <img src="./assets/images/appstore_button.png" alt="">
+                        </div>
+                        <div class="store-btn py-3">
+                            <img src="./assets/images/playstore_button.png" alt="">
+                        </div>
+                    </div>
+                </ul>
+              </div>
+            </div>
+        </footer>
+    </section>
+  </body>
+
+  <!-- JavaScript -->
+  <script>
+// Blog Data (example, replace with your actual blog data)
+const blogs = [
+  {
+    image: "assets/images/2/1.jpg",
+    category: "fashion",
+    title: "Progresively utilize stand alone",
+    date: "Jan 08,2024",
+    comments: "22 Comments",
+    content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
+  },
+  {
+    image: "assets/images/2/3.jpg",
+    category: "fashion",
+    title: "Progresively utilize stand alone",
+    date: "Jan 08,2024",
+    comments: "22 Comments",
+    content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
+  },
+  {
+    image: "assets/images/2/4.jpg",
+    category: "fashion",
+    title: "Progresively utilize stand alone",
+    date: "Jan 08,2024",
+    comments: "22 Comments",
+    content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
+  },
+  {
+    image: "assets/images/2/5.jpg",
+    category: "fashion",
+    title: "Progresively utilize stand alone",
+    date: "Jan 08,2024",
+    comments: "22 Comments",
+    content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
+  },
+  {
+    image: "assets/images/2/6.jpg",
+    category: "fashion",
+    title: "Progresively utilize stand alone",
+    date: "Jan 08,2024",
+    comments: "22 Comments",
+    content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
+  },
+  {
+    image: "assets/images/2/7.jpg",
+    category: "fashion",
+    title: "Progresively utilize stand alone",
+    date: "Jan 08,2024",
+    comments: "22 Comments",
+    content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
+  },
+  {
+    image: "assets/images/2/8.jpg",
+    category: "fashion",
+    title: "Progresively utilize stand alone",
+    date: "Jan 08,2024",
+    comments: "22 Comments",
+    content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
+  },
+  {
+    image: "assets/images/2/9.jpg",
+    category: "fashion",
+    title: "Progresively utilize stand alone",
+    date: "Jan 08,2024",
+    comments: "22 Comments",
+    content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
+  },
+  {
+    image: "assets/images/2/10.jpg",
+    category: "fashion",
+    title: "Progresively utilize stand alone",
+    date: "Jan 08,2024",
+    comments: "22 Comments",
+    content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
+  },
+  {
+    image: "assets/images/2/11.jpg",
+    category: "fashion",
+    title: "Progresively utilize stand alone",
+    date: "Jan 08,2024",
+    comments: "22 Comments",
+    content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
+  },
+  {
+    image: "assets/images/2/12.jpg",
+    category: "fashion",
+    title: "Progresively utilize stand alone",
+    date: "Jan 08,2024",
+    comments: "22 Comments",
+    content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
+  },
+  {
+    image: "assets/images/2/13.jpg",
+    category: "fashion",
+    title: "Progresively utilize stand alone",
+    date: "Jan 08,2024",
+    comments: "22 Comments",
+    content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
+  },
+  {
+    image: "assets/images/2/14.jpg",
+    category: "fashion",
+    title: "Progresively utilize stand alone",
+    date: "Jan 08,2024",
+    comments: "22 Comments",
+    content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
+  },
+  // Add more blog objects here
+];
+
+// Global state for the current page
+let currentPage = 1;
+
+// Function to display blogs
+function displayBlogs(page = 1, blogsPerPage = 6) {
+  const blogContainer = document.querySelector('#blog-container');
+  blogContainer.innerHTML = ''; // Clear the blog container
+
+  const start = (page - 1) * blogsPerPage;
+  const end = start + blogsPerPage;
+  const blogsToShow = blogs.slice(start, end);
+
+  blogsToShow.forEach(blog => {
+    const blogHTML = `
+      <div class="col-lg-4">
+        <div class="item bor mb-4 wow fadeInLeft" data-wow-duration="3s">
+          <a href="blog-single-1.html" class="w-img d-block">
+            <img src="${blog.image}" alt="image">
+          </a>
+          <div class="content text-center p-4">
+            <a href="#0" class="custom-btn mt-2 mb-3">${blog.category}</a>
+            <a href="#0" class="d-block text-dark" style="text-decoration: none;">
+              <h4>${blog.title}</h4>
+            </a>
+            <div class="line-content span-color">
+              <span><a href="#0">Admin</a><span class="ps-2">|</span></span>
+              <span>${blog.date}<span class="ps-2">|</span></span>
+              <span><a href="#0">${blog.comments}</a></span>
+            </div>
+            <p class="sm-font pb-2 pt-2">${blog.content}</p>
+            <div class="share-area">
+              <a href="#0" class="circle-brn"><i class="fa-regular fa-heart"></i></a>
+              <a href="/blog.html" class="custom-btn px-3">Continue Reading</a>
+              <a href="#0" class="circle-brn share-btn-link2"><i class="fa-solid fa-share-nodes"></i></a>
+              <div class="social-media share-now2">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    blogContainer.insertAdjacentHTML('beforeend', blogHTML);
+  });
+
+  updatePagination(page);
+}
+
+// Function to update pagination
+function updatePagination(currentPage) {
+  const totalBlogs = blogs.length;
+  const blogsPerPage = 6;
+  const totalPages = Math.ceil(totalBlogs / blogsPerPage);
+
+  const pagination = document.querySelector('.digit');
+  pagination.innerHTML = ''; // Clear existing pagination
+
+  for (let i = 1; i <= totalPages; i++) {
+    const pageLink = `<a href="#" class="${i === currentPage ? 'active' : ''}" onclick="displayBlogs(${i})">${i}</a>`;
+    pagination.insertAdjacentHTML('beforeend', pageLink);
+  }
+
+  // Enable or disable Older/Newer post links
+  document.querySelector('#older-posts').style.pointerEvents = currentPage === totalPages ? 'none' : 'auto';
+  document.querySelector('#newer-posts').style.pointerEvents = currentPage === 1 ? 'none' : 'auto';
+}
+
+// Event listeners for Older and Newer posts
+document.querySelector('#older-posts').addEventListener('click', () => {
+  if (currentPage < Math.ceil(blogs.length / 6)) {
+    currentPage++;
+    displayBlogs(currentPage);
+  }
+});
+
+document.querySelector('#newer-posts').addEventListener('click', () => {
+  if (currentPage > 1) {
+    currentPage--;
+    displayBlogs(currentPage);
+  }
+});
+
+// Initial display of blogs (page 1)
+displayBlogs();
+</script>
+</html>
