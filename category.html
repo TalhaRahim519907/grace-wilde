@@ -144,7 +144,7 @@
                   <li><a href="#">Article</a></li>
                   <li><a href="#">Pricing</a></li>
                   <li><a href="#">Contact Us</a></li>
-                  <li><a href="/blog.html">Blog</a></li>
+                  <li><a href="/category.html">Articles</a></li>
                 </ul>
               </div>
               <div class="mt-3 footer-col-3 col-md-3 col-sm-6">
@@ -189,20 +189,24 @@ const blogs = [
     title: "Progresively utilize stand alone",
     date: "Jan 08,2024",
     comments: "22 Comments",
-    content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
+    content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills.",
+    p1:"Seamlessly integrate long-term, high-impact infrastructures by focusing on essential action items that are distinct and consistent. Harness innovative initiatives instead of merely highlighting top-line leadership abilities. Swiftly cultivate sustainable global markets while redefining superior systems. Encourage intuitive leadership through empowering methodologies. Strategically redesign future-proof systems tailored for client-focused web services. Creatively reimagine team-oriented supply chains through collaborative partnerships. Rapidly rethink client-centric networks that enhance customer service experiences. Work together to build unique communities that revolutionize supply chains. Collaboratively customize process-oriented collaboration and facilitate idea sharing, ensuring the delivery of technically robust services. Continuously develop standards-compliant technologies that enhance mindshare and knowledge exchange. Deliver reliable information that supports widespread content accessibility.",
+    h4:"i am here",
+    p2:"where are you"
   },
   {
     image: "assets/images/2/3.jpg",
-    category: "fashion",
-    title: "Progresively utilize stand alone",
+    category: "life style",
+    title: "Distinctively colabrative infrastructures ",
     date: "Jan 08,2024",
     comments: "22 Comments",
     content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
+    
   },
   {
     image: "assets/images/2/4.jpg",
-    category: "fashion",
-    title: "Progresively utilize stand alone",
+    category: "travel",
+    title: "Credibly build pandemic potentialities",
     date: "Jan 08,2024",
     comments: "22 Comments",
     content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
@@ -287,6 +291,8 @@ const blogs = [
     comments: "22 Comments",
     content: "Monotonectally and leverage other viral the able emarkets Globally recaptiualize premier theme sucking leadership skills."
   },
+  
+  
   // Add more blog objects here
 ];
 
@@ -322,7 +328,7 @@ function displayBlogs(page = 1, blogsPerPage = 6) {
             <p class="sm-font pb-2 pt-2">${blog.content}</p>
             <div class="share-area">
               <a href="#0" class="circle-brn"><i class="fa-regular fa-heart"></i></a>
-              <a href="/blog.html" class="custom-btn px-3">Continue Reading</a>
+              <a href="blog.html?image=${encodeURIComponent(blog.image)}&category=${encodeURIComponent(blog.category)}&title=${encodeURIComponent(blog.title)}" class="custom-btn px-3">Continue Reading</a>
               <a href="#0" class="circle-brn share-btn-link2"><i class="fa-solid fa-share-nodes"></i></a>
               <div class="social-media share-now2">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
