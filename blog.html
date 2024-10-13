@@ -135,6 +135,7 @@
                   </div>
                   <p
                     class="pb-4 pt-3 text-start wow fadeInDown"
+                    id="p1"
                     data-wow-duration="3.5s"
                   >
                     Efficiently mesh long term hiagh impact infrastructures via
@@ -337,7 +338,7 @@
 
             queryArray.forEach(param => {
                 const [key, value] = param.split("=");
-                params[decodeURIComponent(key)] = decodeURIComponent(value);
+                params[decodeURIComponent(key)] = decodeURIComponent(value.replace(/\+/g, ' ')); // Decode and replace "+" with space
             });
 
             return params;
@@ -355,8 +356,8 @@
 
             // Update the HTML elements with the blog details
             blogImage.src = params.image || "assets/images/10.jpg"; // Fallback image if not provided
-            blogTitle.textContent = params.title || "Default Title";
-            blogCategory.textContent = params.category || "Default Category";
+            blogTitle.textContent = params.title || "Distinctively colaborative infrasctures";
+            blogCategory.textContent = params.category || "Fashion";
             blogp1.textContent = params.p1 || "p1";
             blogh4.textContent = params.h4 || "h4";
             blogp2.textContent = params.p2 || "p2";
